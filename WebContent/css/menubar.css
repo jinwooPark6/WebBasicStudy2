@@ -3,6 +3,11 @@ ul{
 	list-style: none;
 	
 }
+#hmenu{
+	padding-top:100px;
+	padding-left: 300px;
+	border: 2px double blue;
+}
 #horizon_menu li{
 	display: inline-block;
 	width: 120px;
