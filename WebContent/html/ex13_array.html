@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+	<select id = 'cities'>
+		<option>::선택하시오::</option>
+	</select>
+	
+	<script>
+	var cityArray = ["서울" ,"대전", "대구", "부산"];
+	var select = document.getElementById('cities');
+	for(var i=0; i<cityArray.length;i++){
+		select.innerHTML = select.innerHTML + "<option>" + cityArray[i] + "</option>";
+	}
+</script>
+
+</body>
+</html>
