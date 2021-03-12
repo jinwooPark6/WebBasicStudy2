@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+	/* window.onload = function(){
+		
+	} */
+	/* $(document).ready(function(){
+		
+	}) */
+	$(function(){
+		//태그 선택자
+		$("li").css("listStyle", "none");
+		
+		//클래스 선택자
+		$(".abc").css("color","#ff00ff");
+		
+		//속성 선택자
+		$("[title]").css("textDecoration","underline");
+		$("[title = '2']").text('보우우우우하사');
+		//조건 - jquery 방식으로 태그들을 선택할 경우 무조건 jquery 함수만 가능
+		
+		//나머지 선택자는 ex_selector 참고
+	});
+</script>
+</head>
+<body>
+	<ul>
+		<li>동해물과</li>
+		<li>백두산이</li>
+		<li class="abc">마르고</li>
+		<li class="def">닳도록</li>
+		<li title="1">하느님이</li>
+		<li title="2">보우하사</li>
+		
+	</ul>
+</body>
+</html>
