@@ -120,6 +120,16 @@
 		})
 	}
 	
+	//시간에 따라 css를 점차적으로 적용되게 하기
+	function moveLeft_photo(){
+		$("#photo").animate({"margin-left":"0px", opacity:1});
+	}
+	
+	function moveRight_photo(){
+		$("#photo").animate({"margin-left":"500px", opacity:"0.5"}, 2000, function(){
+			console.log("우로 이동");
+		});
+	}
 </script>
 </head>
 <body>
@@ -168,7 +178,15 @@
 			</tr>
 		</table>	
 	</div>
-	<input id="toggle_login" type="button" value="로그인" onclick="slideToggle_login();">
+	<input id="toggle_login" type="button" value="로그인" onclick="slideToggle_login();"><br><br>
+	
+	<!-- 애니메이션 효과 -->
+	<img id="photo" src="../img/photo.jpg"><br>
+	<input type="button" value="moveLeft" onclick="moveLeft_photo()"/>
+	<input type="button" value="moveRight" onclick="moveRight_photo()">
+	
+	
+	
 	
 	
 </html>
